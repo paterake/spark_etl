@@ -8,6 +8,6 @@ import com.paterake.spark.etl.model.catalogue.DataCatalogueKey
 case class EtlTarget(dataCatalogueKey: DataCatalogueKey
                      , etlAction: String) extends EtlBaseTrait {
   var clcnEtlSql = None : Option[ List[String]]
-  var dataFilter = None : Option[DataFilter]
+  var pathName = None : Option[String]
 
 }

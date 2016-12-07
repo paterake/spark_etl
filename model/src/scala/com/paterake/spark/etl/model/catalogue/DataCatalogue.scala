@@ -1,5 +1,7 @@
 package com.paterake.spark.etl.model.catalogue
 
+import com.paterake.spark.etl.model.etl.DataFilter
+
 /**
   * Created by rak on 06/12/2016.
   */
@@ -22,4 +24,6 @@ case class DataCatalogue(dataCatalogueKey: DataCatalogueKey
                          , footerDataType: String
                          , rowTag: String
                          , fileNamePattern: String
-                         , dateContext: DateContext)
+                         , dateContext: DateContext
+                         , dataFilter: DataFilter
+                        )
