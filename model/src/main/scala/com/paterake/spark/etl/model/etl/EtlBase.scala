@@ -7,15 +7,15 @@ import scala.collection.mutable
 /**
   * Created by rak on 07/12/2016.
   */
-trait EtlBaseTrait {
+trait EtlBase {
   def dataCatalogueKey: DataCatalogueKey
 
   def etlAction: String
 
-  var dataCatalogue = None: Option[DataCatalogue]
+  var dataCatalogue: Option[DataCatalogue] = None: Option[DataCatalogue]
 
-  var indPartition = None: Option[String]
+  var indPartition: Option[String] = None: Option[String]
 
-  var mapPartition = None: Option[mutable.LinkedHashMap[String, String]]
+  var mapPartition: Option[mutable.LinkedHashMap[String, String]] = None: Option[mutable.LinkedHashMap[String, String]]
 
 }
