@@ -1,8 +1,13 @@
 package com.paterake.spark.etl.model.etl
 
+import com.paterake.spark.etl.model.catalogue.DataCatalogueKey
+
 /**
-  * Created by rak on 30/11/2016.
+  * Created by rak on 07/12/2016.
   */
-class EtlTarget {
+case class EtlTarget(dataCatalogueKey: DataCatalogueKey
+                     , etlAction: String) extends EtlBaseTrait {
+  var clcnEtlSql = None : Option[ List[String]]
+  var dataFilter = None : Option[DataFilter]
 
 }
